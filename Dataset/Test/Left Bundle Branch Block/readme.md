@@ -1,1 +1,0 @@
-Left Bundle Branch block 
