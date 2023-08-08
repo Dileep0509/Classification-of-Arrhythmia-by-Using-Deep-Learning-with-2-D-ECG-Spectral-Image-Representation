@@ -1,1 +1,0 @@
-Right Bundle Branch Block
