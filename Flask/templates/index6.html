@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="color:white; font-family:'Times New Roman'; font-size:60px; text-align:center;">
+    ECG Arrhythmia Classification
+</h2>
+
+<div>
+
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+
+        <center>
+            <label for="imageUpload" class="upload-label">
+                Choose...
+            </label>
+
+            <input type="file"
+                   name="file"
+                   id="imageUpload"
+                   accept=".png, .jpg, .jpeg">
+        </center>
+
+    </form>
+
+    <div class="image-section" style="display:none; text-align:center;">
+
+        <div class="img-preview">
+            <div id="imagePreview"></div>
+        </div>
+
+        <div>
+            <button type="button"
+                    class="btn btn-primary btn-lg"
+                    id="btn-predict">
+                Predict!
+            </button>
+        </div>
+
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 style="color:white; text-align:center;" id="result">
+        <span></span>
+    </h3>
+
+</div>
+
+{% endblock %}
